@@ -11,12 +11,12 @@
     -fx-font-size: 16px;
 }
 
-.button:hover {
-    -fx-background-color: #5dade2;
-}
-
 .button:focused {
     -fx-background-color: #2980b9;
+}
+
+.button:hover {
+    -fx-background-color: #5dade2;
 }
 
 .button:pressed {

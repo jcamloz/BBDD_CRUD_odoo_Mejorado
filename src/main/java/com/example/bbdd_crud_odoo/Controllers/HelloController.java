@@ -107,9 +107,9 @@ public class HelloController {
     // contiene texto válido) se deshabilita el botón de borrar filtros
     clean.disableProperty().bind(Bindings.createBooleanBinding(
         () -> nombre.getText().trim().isEmpty() && baseDatos.getText().trim().isEmpty()
-            && duracion.getText().trim().isEmpty() && fecha.getValue() == null,
+            && duracion.getText().trim().isEmpty() && fecha.getValue() == null && fecha.getEditor().getText().trim().isEmpty(),
         nombre.textProperty(), baseDatos.textProperty(), duracion.textProperty(),
-        duracion.textProperty(), fecha.valueProperty()
+        duracion.textProperty(), fecha.valueProperty(), fecha.getEditor().textProperty()
     ));
 
     //Configuro las columnas para mostrar el valor de la propiedad indicada.
@@ -455,6 +455,7 @@ public class HelloController {
     nombre.clear();
     duracion.clear();
     baseDatos.clear();
+    fecha.getEditor().clear();
     fecha.setValue(null);
   }
 }
