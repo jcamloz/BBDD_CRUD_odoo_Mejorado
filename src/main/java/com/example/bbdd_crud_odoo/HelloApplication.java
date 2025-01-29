@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
   @Override
   public void start(Stage stage) throws IOException {
     FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("principal.fxml"));
-    Scene scene = new Scene(fxmlLoader.load(), 1041, 950);
+    Scene scene = new Scene(fxmlLoader.load(), 1041, 850);
     scene.getStylesheets().add(getClass().getResource("CSS/styles.css").toExternalForm());
     stage.setTitle("Conexión a Base de datos de sesiones");
     stage.setScene(scene);

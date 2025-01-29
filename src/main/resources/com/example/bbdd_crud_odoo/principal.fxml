@@ -30,108 +30,101 @@
    </VBox>
    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="786.0" spacing="20.0">
       <children>
-          <Text id="subtitle" strokeType="OUTSIDE" strokeWidth="0.0" text="FILTROS" />
-         <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="218.0" prefWidth="537.0" vgap="37.0">
-           <columnConstraints>
-             <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-           </columnConstraints>
-           <rowConstraints>
-             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-           </rowConstraints>
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
             <children>
-                  <Label prefHeight="29.0" text="Nombre de Usuario:" />
-                  <TextField id="1" fx:id="nombre" prefHeight="31.0" prefWidth="321.0" promptText="NOMBRE" GridPane.columnIndex="1" />
-                  <DatePicker id="2" fx:id="fecha" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="242.0" promptText="SELECCIONA UNA FECHA" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label text="Base de Datos:" GridPane.rowIndex="2" />
-                  <TextField id="4" fx:id="baseDatos" promptText="SQL" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Label text="Tiempo de conexión:" GridPane.rowIndex="3" />
-                  <TextField id="8" fx:id="duracion" promptText="MINUTOS" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-               <Label prefHeight="29.0" text="Fecha de Inicio de sesión" GridPane.rowIndex="1" />
-               <Label text="Limpiar filtros:" GridPane.rowIndex="4" />
-               <Button id="specialButton" fx:id="clean" minHeight="-Infinity" mnemonicParsing="false" onAction="#onCleanPressed" prefHeight="43.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
-                  <graphic>
-                     <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                           <Image url="@images/goma.png" />
-                        </image>
-                     </ImageView>
-                  </graphic>
-               </Button>
+               <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="264.0" prefWidth="1011.0" vgap="37.0">
+                 <columnConstraints>
+                   <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="190.0" />
+                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="411.0" minWidth="10.0" prefWidth="402.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="327.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                        <Label prefHeight="29.0" text="Nombre de Usuario:" GridPane.rowIndex="1" />
+                        <TextField id="1" fx:id="nombre" prefHeight="31.0" prefWidth="321.0" promptText="NOMBRE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <DatePicker id="2" fx:id="fecha" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="242.0" promptText="SELECCIONA UNA FECHA" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Base de Datos:" GridPane.rowIndex="3" />
+                        <TextField id="4" fx:id="baseDatos" promptText="SQL" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Tiempo de conexión:" GridPane.rowIndex="4" />
+                        <TextField id="8" fx:id="duracion" promptText="MINUTOS" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     <Label prefHeight="29.0" text="Fecha de Inicio de sesión:" GridPane.rowIndex="2" />
+                      <Text id="subtitle" strokeType="OUTSIDE" strokeWidth="0.0" text="FILTROS" GridPane.columnIndex="1" />
+                     <Text id="subtitle" strokeType="OUTSIDE" strokeWidth="0.0" text="OPERACIONES" GridPane.columnIndex="2" />
+                     <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="150.0" GridPane.columnSpan="2" GridPane.rowIndex="5" GridPane.rowSpan="2147483647">
+                        <children>
+                           <Label text="Limpiar filtros:" />
+                           <Button fx:id="clean" minHeight="-Infinity" mnemonicParsing="false" onAction="#onCleanPressed" prefHeight="43.0" prefWidth="49.0">
+                              <graphic>
+                                 <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@images/goma.png" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                           </Button>
+                        </children>
+                     </HBox>
+                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                        <children>
+                              <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#onSearchPressed">
+                                  <graphic>
+                                      <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@images/lupa.png" />
+                                          </image>
+                                      </ImageView>
+                                  </graphic>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#onAddOrEditPressed">
+                                  <graphic>
+                                      <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@images/add.png" />
+                                          </image>
+                                      </ImageView>
+                                  </graphic>
+                              </Button>
+                              <Button fx:id="edit" mnemonicParsing="false" onAction="#onAddOrEditPressed">
+                                  <graphic>
+                                      <ImageView fitHeight="33.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@images/lapiz.png" />
+                                          </image>
+                                      </ImageView>
+                                  </graphic>
+                              </Button>
+                              <Button fx:id="delete" mnemonicParsing="false" onAction="#onDeletePressed">
+                                  <graphic>
+                                      <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@images/papelera.png" />
+                                          </image>
+                                      </ImageView>
+                                  </graphic>
+                              </Button>
+                        </children>
+                     </VBox>
+                  </children>
+                  <padding>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </padding>
+               </GridPane>
             </children>
-            <padding>
-               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-            <VBox.margin>
-               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </VBox.margin>
-         </GridPane>
+         </HBox>
          <Separator prefWidth="200.0" />
       </children>
       <VBox.margin>
          <Insets />
       </VBox.margin>
    </VBox>
-   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
-      <children>
-         <Text id="subtitle" strokeType="OUTSIDE" strokeWidth="0.0" text="OPERACIONES" />
-          <HBox alignment="TOP_CENTER" prefHeight="72.0" prefWidth="1011.0" spacing="50.0">
-              <children>
-                  <Button minHeight="-Infinity" mnemonicParsing="false" onAction="#onSearchPressed" prefHeight="43.0" prefWidth="49.0">
-                      <graphic>
-                          <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                              <image>
-                                  <Image url="@images/lupa.png" />
-                              </image>
-                          </ImageView>
-                      </graphic>
-                  </Button>
-                  <Button mnemonicParsing="false" onAction="#onAddOrEditPressed" prefHeight="43.0" prefWidth="49.0">
-                      <HBox.margin>
-                          <Insets />
-                      </HBox.margin>
-                      <graphic>
-                          <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
-                              <image>
-                                  <Image url="@images/add.png" />
-                              </image>
-                          </ImageView>
-                      </graphic>
-                  </Button>
-                  <Button fx:id="edit" mnemonicParsing="false" onAction="#onAddOrEditPressed" prefHeight="43.0" prefWidth="49.0">
-                      <graphic>
-                          <ImageView fitHeight="33.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                              <image>
-                                  <Image url="@images/lapiz.png" />
-                              </image>
-                          </ImageView>
-                      </graphic>
-                  </Button>
-                  <Button fx:id="delete" mnemonicParsing="false" onAction="#onDeletePressed" prefHeight="43.0" prefWidth="49.0">
-                      <graphic>
-                          <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
-                              <image>
-                                  <Image url="@images/papelera.png" />
-                              </image>
-                          </ImageView>
-                      </graphic>
-                  </Button>
-              </children>
-          </HBox>
-         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" />
-      </children>
-      <VBox.margin>
-         <Insets />
-      </VBox.margin>
-      <padding>
-         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-      </padding>
-   </VBox>
-    <TableView fx:id="tbData" focusTraversable="false" minHeight="-Infinity" prefHeight="413.0" prefWidth="994.0" VBox.vgrow="ALWAYS">
+    <TableView fx:id="tbData" focusTraversable="false" minHeight="-Infinity" prefHeight="442.0" prefWidth="1001.0" VBox.vgrow="ALWAYS">
         <columns>
             <TableColumn fx:id="id" editable="false" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="-1.0" resizable="false" sortable="false" text="ID" />
             <TableColumn fx:id="name" editable="false" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="-1.0" resizable="false" sortable="false" text="Nombre" />

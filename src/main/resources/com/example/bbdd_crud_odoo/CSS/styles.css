@@ -33,22 +33,6 @@
     -fx-font-size: 16px;
 }
 
-#specialButton {
-    -fx-background-color: #76d7c4;
-}
-
-#specialButton:hover {
-    -fx-background-color: #48c9b0;
-}
-
-#specialButton:pressed {
-    -fx-background-color: #0e987c;
-}
-
-#specialButton:focused {
-    -fx-background-color: #48c9b0;
-}
-
 /* Labels */
 .label {
     -fx-font-size: 16px;
@@ -126,13 +110,13 @@
 
 /* Alerts */
 .custom-alert {
-    -fx-background-color: #f8d7da;
-    -fx-border-color: #f5c6cb;
-    -fx-text-fill: #721c24;
+    -fx-background-color: #d1e7dd;
+    -fx-border-color: #c3e6cb;
+    -fx-text-fill: #155724;
 }
 
 .custom-alert .header-panel {
-    -fx-background-color: #f5c6cb;
-    -fx-text-fill: #721c24;
+    -fx-background-color: #c3e6cb;
+    -fx-text-fill: #155724;
     -fx-font-weight: bold;
 }
